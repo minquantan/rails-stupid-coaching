@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: https://sass-lang.com/
 $gray: #f4f4f4b6;
 $corruptgolden: #dbc413a5;
-$blackgold: #a39002a8;
+$blackgold: #302b05a8;
 
 body {
   background: $gray; // Using this variable
@@ -47,6 +47,12 @@ input[type=text] {
   border-color: $corruptgolden;
   color: $blackgold;
   padding: 8px;
+  &:hover {
+    border-color: rgb(75, 5, 75);
+    &::placeholder {
+      color: transparent;
+    }
+  }
 }
 
 input[type=submit] {
@@ -58,9 +64,22 @@ input[type=submit] {
   color: white;
   font-weight: 400;
   padding: 8px;
+  &:hover {
+    cursor: grab;
+
+  }
 }
 
 ::placeholder {
   color: rgb(155, 41, 212);
   font-size: 14px;
+}
+
+
+.boxotext {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $blackgold;
 }
