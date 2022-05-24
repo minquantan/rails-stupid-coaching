@@ -1,0 +1,66 @@
+// Place all the styles related to the Questions controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+$gray: #f4f4f4b6;
+$corruptgolden: #dbc413a5;
+$blackgold: #a39002a8;
+
+body {
+  background: $gray; // Using this variable
+}
+
+// html {
+//   display: flex;
+//   align-items: center;
+//   // justify-content: center;
+// }
+
+html, body {
+  height: 100%;
+}
+
+html {
+  display: table;
+  margin: auto;
+}
+
+body {
+  display: table-cell;
+}
+
+.banner {
+  padding: 20px;
+  background: rgba(255, 0, 0, 0.418);
+  h1 {
+    font-size: 50px;
+  }
+  h2 {
+    font-size: 25px;
+    font-weight: 300;
+  }
+}
+
+input[type=text] {
+  width: 300px;
+  border-style: solid;
+  border-width: 4px;
+  border-color: $corruptgolden;
+  color: $blackgold;
+  padding: 8px;
+}
+
+input[type=submit] {
+  // width: 300px;
+  // border-style: solid;
+  // border-width: 4px;
+  border-color: $corruptgolden;
+  background-color: darkcyan;
+  color: white;
+  font-weight: 400;
+  padding: 8px;
+}
+
+::placeholder {
+  color: rgb(155, 41, 212);
+  font-size: 14px;
+}
